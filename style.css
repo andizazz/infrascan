@@ -1,33 +1,115 @@
-*, html {
+:root {
+    --primary : #123458;
+    --bg : #F1EFEC;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 body {
-    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+    color: #030303;
 }
 
-nav {
-    background-color: white;
+/* Navbar Start */
+ .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    padding: 1rem 7%;
+    background-color: rgba(18, 52, 88, 0.8);
+    border-bottom: 5px solid #f1efecd0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F1EFEC;
+    font-style: italic;
 }
 
-nav ul li a:hover {
-    color: red;
+.navbar .navbar-logo span{
+    color: #030303;
 }
+
+.navbar .navbar-nav a{
+    color: #F1EFEC;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+    color: #030303;
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #030303;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleY(0.5);
+}
+
+.navbar .navbar-search a {
+    color: #F1EFEC;
+    margin: 0 0.5rem;
+    
+}
+
+.navbar .navbar-search a:hover{
+    color: #030303;
+}
+
+#menu {
+    display: none;
+}
+/* Navbar end */
+
+/* Responsif sesuai media */
+/* laptop */
+@media (max-width: 1366px){
+    html {
+        font-size: 100%;
+    }
+}
+/* laptop end */
+
+/* tablet */
+@media (max-width: 758px){
+    html {
+        font-size: 65%;
+    }
+    #menu {
+        display: inline-block;
+    }
+}
+/* tablet end */
+
+/* handphone */
+@media (max-width: 450px){
+    html {
+        font-size: 45%;
+    }
+}
+/* handphone end */
+/* responsif media end */
