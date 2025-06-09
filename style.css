@@ -161,8 +161,58 @@ body {
     border-radius: 50px;
     text-decoration: none;
 }
+.left {
+    position: relative;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.left::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px; 
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 100%);
+    pointer-events: none;
+}
 
 /* halaman utama end */
+
+/* kotak-kotak start */
+
+.kotak-kotak a .bagian-kotak .tempat {
+    padding: 1.2rem 7%;
+}
+
+.kotak-kotak {
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 10;
+    position: relative;
+    margin-top: -40px;
+}
+
+.kotak-kotak a {
+    border: solid 3px #F1EFEC;
+    border-radius: 3%;
+    box-shadow: 0 5px 13px 0 #000000;
+    padding: 20px;
+    background-color: #F1EFEC;
+    border-top: #123458 solid 5px;
+}
+
+/* kotak-kotak end */
 
 /* Responsif sesuai media */
 /* laptop */
@@ -207,6 +257,9 @@ body {
     .home-content .left img {
         display: none;
     }
+    .kotak-kotak {
+        margin-top: -200px;
+        
 
 
 }
@@ -214,9 +267,10 @@ body {
 
 /* handphone */
 @media (max-width: 450px){
-    html {
-        font-size: 45%;
+    .navbar-logo {
+        font-size: 65%;
     }
+}
 }
 /* handphone end */
 /* responsif media end */
