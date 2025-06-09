@@ -26,7 +26,7 @@ body {
     align-items: center;
     padding: 1rem 7%;
     background-color: rgba(18, 52, 88, 0.8);
-    border-bottom: 5px solid #f1efecd0;
+    border-bottom: 3px solid #f1efecd0;
     position: fixed;
     top: 0;
     right: 0;
@@ -109,6 +109,61 @@ body {
 }
 /* Navbar end */
 
+/* halaman utama start */
+
+.utama {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 7%;
+    padding-left: 0%;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+.home-content .left img {
+    max-width: 100%;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+.home-content .right {
+    color: #030303;
+    max-width: 600px;
+}
+
+.home-content .right h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-content .right p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-content .right .action {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: #F1EFEC;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* halaman utama end */
+
 /* Responsif sesuai media */
 /* laptop */
 @media (max-width: 1366px){
@@ -146,6 +201,13 @@ body {
         padding: 0.5rem;
         font-size: 2rem;
     }
+    .home-content {
+        justify-content: center;
+    }
+    .home-content .left img {
+        display: none;
+    }
+
 
 }
 /* tablet end */
