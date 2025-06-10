@@ -197,7 +197,7 @@ body {
     display: flex;
     align-items: space-between;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     z-index: 10;
     position: relative;
     margin-top: -40px;
@@ -210,10 +210,60 @@ body {
     padding: 20px;
     background-color: #F1EFEC;
     border-top: #123458 solid 5px;
+    color: #123458;
+    transition: 1s;
+    width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
+.kotak-kotak a .bagian-kotak .tempat h3 {
+    color: #123458;
+}
+.kotak-kotak a .bagian-kotak .tempat p {
+    color: #000000;
+}
+.kotak-kotak a:hover {
+    transform: scale(0.9);
+}
 /* kotak-kotak end */
 
+/* visi-misi start */
+
+.visi-misi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+.visi-misi .gambar-visi-misi {
+    border: solid 3px #F1EFEC;
+    border-top: #123458 solid 5px;
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0 5px 13px 0 #000000;
+}
+.visi-misi .gambar-visi-misi img{
+    width: 23rem;
+    height: 29.5rem;
+}
+.visi-misi .text h1 span {
+    color: #123458;
+}
+.visi-misi .text h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.visi-misi .text p {
+    font-size: 1rem;
+}
+/* visi-misi end */
 /* Responsif sesuai media */
 /* laptop */
 @media (max-width: 1366px){
@@ -259,16 +309,36 @@ body {
     }
     .kotak-kotak {
         margin-top: -200px;
-        
-
-
-}
+    }
+    .visi-misi .gambar-visi-misi {
+        width: 40rem;
+        height: 20rem;
+    }
+    .visi-misi .gambar-visi-misi img{
+        width: 20rem;
+        height: 19.3rem;
+    }
 /* tablet end */
 
 /* handphone */
 @media (max-width: 450px){
     .navbar-logo {
         font-size: 65%;
+    }
+    .visi-misi .gambar-visi-misi {
+        width: 20rem;
+        height: 10rem;
+    }
+    .visi-misi {
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .visi-misi .text {
+        font-size: 75%;
+    }
+    .visi-misi .gambar-visi-misi img{
+        width: 19rem;
+        height: 9.4rem;
     }
 }
 }
