@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 7%;
-    background-color: rgba(18, 52, 88, 0.8);
+    background-color: var(--primary);
     border-bottom: 3px solid #f1efecd0;
     position: fixed;
     top: 0;
@@ -213,7 +213,7 @@ body {
     color: #123458;
     transition: 1s;
     width: 250px;
-    min-height: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,8 +262,65 @@ body {
 }
 .visi-misi .text p {
     font-size: 1rem;
+    line-height: 1.5;
 }
 /* visi-misi end */
+
+/* footer start */
+
+footer{
+    background-color: #123458;
+    padding: 0.5rem 0;
+    padding-bottom: 0;
+}
+footer .socialicons {
+    display: flex;
+    justify-content: center;
+}
+footer .socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 60%;
+    color: #123458;
+    font-size: 1em;
+}
+footer .socialicons a:hover {
+    background-color: #185393;
+    transition: 0.5s;
+    color: #F1EFEC; 
+}
+footer .footernav .ul {
+    display: flex;
+    justify-content: center;
+}
+footer .footernav .ul a {
+    text-decoration: none;
+    color: #F1EFEC;
+    margin: 20px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+footer .footernav .ul a:hover {
+    opacity: 1;
+}
+footer .footerbottom {
+    background-color: #0e2742;
+    padding: 0.3rem;
+    color: #F1EFEC;
+    text-align: center;
+}
+footer .footerbottom p span{
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0.5px;
+}
+
+
+/* footer end */
+
 /* Responsif sesuai media */
 /* laptop */
 @media (max-width: 1366px){
@@ -318,6 +375,10 @@ body {
         width: 20rem;
         height: 19.3rem;
     }
+    footer .socialicons a {
+        padding: 5px;
+        margin: 5px;
+    }
 /* tablet end */
 
 /* handphone */
@@ -333,13 +394,26 @@ body {
         gap: 1rem;
         padding: 1rem;
     }
-    .visi-misi .text {
-        font-size: 75%;
+    .visi-misi .text h1{
+        font-size: 2rem;
+    }
+    .visi-misi .text p {
+        font-size: 0.8rem;
     }
     .visi-misi .gambar-visi-misi img{
         width: 19rem;
         height: 9.4rem;
     }
+    .kotak-kotak {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50%;
+    }
+    .kotak-kotak a {
+        width: 80%;
+        height: 10%;
+    }
+    
 }
 }
 /* handphone end */
