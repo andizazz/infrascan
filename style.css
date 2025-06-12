@@ -26,7 +26,6 @@ body {
     align-items: center;
     padding: 1rem 7%;
     background-color: var(--primary);
-    border-bottom: 3px solid #f1efecd0;
     position: fixed;
     top: 0;
     right: 0;
@@ -270,7 +269,7 @@ body {
 
 footer{
     background-color: #123458;
-    padding: 0.5rem 0;
+    padding: 0;
     padding-bottom: 0;
 }
 footer .socialicons {
@@ -279,7 +278,7 @@ footer .socialicons {
 }
 footer .socialicons a{
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
     margin: 10px;
     border-radius: 60%;
@@ -298,7 +297,7 @@ footer .footernav .ul {
 footer .footernav .ul a {
     text-decoration: none;
     color: #F1EFEC;
-    margin: 20px;
+    margin: 10px;
     opacity: 0.7;
     transition: 0.5s;
 }
