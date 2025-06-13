@@ -319,12 +319,15 @@ footer .footerbottom p span{
 /* tablet end */
 
 /* handphone */
-@media (max-width: 600px){
+@media (max-width: 450px){
     .navbar-logo {
         font-size: 65%;
     }
     .navbar .navbar-search input {
         width: 90px;
+    }
+    body {
+        width: 450px;
     }
 }
 /* handphone end */
