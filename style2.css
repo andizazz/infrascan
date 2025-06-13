@@ -311,6 +311,9 @@ footer .footerbottom p span{
         object-fit: cover; 
         z-index: -1;
     }
+    .navbar .navbar-search input {
+        width: 200px;
+    }
     
 }
 /* tablet end */
@@ -319,6 +322,9 @@ footer .footerbottom p span{
 @media (max-width: 600px){
     .navbar-logo {
         font-size: 65%;
+    }
+    .navbar .navbar-search input {
+        width: 90px;
     }
 }
 /* handphone end */

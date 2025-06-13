@@ -102,6 +102,10 @@ body {
     outline: none;
     box-shadow: 0 5px 13px 0 #123458;
 }
+.navbar .navbar-search i {
+    width: 5px;
+    height: 5px;
+}
 
 #menu {
     display: none;
@@ -378,6 +382,10 @@ footer .footerbottom p span{
         padding: 5px;
         margin: 5px;
     }
+    .navbar .navbar-search input {
+        width: 200px;
+    }
+    
 /* tablet end */
 
 /* handphone */
@@ -412,7 +420,9 @@ footer .footerbottom p span{
         width: 80%;
         height: 10%;
     }
-    
+    .navbar .navbar-search input {
+        width: 90px;
+    }
 }
 }
 /* handphone end */
