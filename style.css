@@ -381,7 +381,7 @@ footer .footerbottom p span{
 /* tablet end */
 
 /* handphone */
-@media (max-width: 450px){
+@media (max-width: 600px){
     .navbar-logo {
         font-size: 65%;
     }
