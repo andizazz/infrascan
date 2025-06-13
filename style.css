@@ -406,7 +406,7 @@ footer .footerbottom p span{
     .kotak-kotak {
     flex-direction: column;
     align-items: center;
-    margin-top: -50%;
+    margin-top: -45%;
     }
     .kotak-kotak a {
         width: 80%;
