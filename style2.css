@@ -329,6 +329,9 @@ footer .footerbottom p span{
     body {
         width: 450px;
     }
+    .report .report-right video {
+        height: 90%;
+    }
 }
 /* handphone end */
 /* responsif media end */
